@@ -1,0 +1,22 @@
+{
+  "extends": "eslint:recommended",
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
+  "rules": {
+    "import/no-anonymous-default-export": "off",
+    "@typescript-eslint/no-explicit-any": "error",
+    "@typescript-eslint/no-unused-vars": "error",
+    "no-async-promise-executor": "off"
+  },
+  "env": {
+    "es6": true,
+    "node": true,
+    "browser": true
+  },
+  "globals": {
+    "NodeJS": true,
+    "i18n": true,
+    "JSX": true
+  },
+  "ignorePatterns": ["node_modules/*", "public/*", "dep/*", "global.d.ts", "config/*", "dist/*"]
+}

@@ -1,0 +1,16 @@
+{
+  "extends": ["stylelint-config-standard", "stylelint-config-prettier"],
+  "ignoreFiles": ["node_modules/**/*", "public/**/*", "**/globalcss/normalize.css", "**/globalcss/icon.css"],
+  "customSyntax": "postcss-scss",
+  "rules": {
+    "font-family-no-missing-generic-family-keyword": null,
+    "declaration-colon-newline-after": null,
+    "selector-pseudo-class-no-unknown": null,
+    "property-no-unknown": null,
+    "no-descending-specificity": null,
+    "selector-class-pattern": null,
+    "rule-empty-line-before": null,
+    "color-function-notation": null,
+    "value-no-vendor-prefix": null
+  }
+}
