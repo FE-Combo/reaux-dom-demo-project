@@ -1,5 +1,6 @@
 import Main from './components/Main';
 import cookieUitls from 'js-cookie';
+import { AllState } from 'src/state';
 import { Model, register } from 'reaux-dom';
 import { State, Language } from './type';
 
@@ -10,7 +11,7 @@ const initialState: State = {
   lang: 'zh'
 };
 
-class ActionHandler extends Model<State> {
+class ActionHandler extends Model<State, AllState> {
   async onReady() {
     console.log('main onReady');
     const lang =

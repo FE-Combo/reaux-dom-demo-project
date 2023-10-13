@@ -1,6 +1,6 @@
 import React, { memo } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { AllState } from 'src/utils/state';
+import { AllState } from 'src/state';
 import { Button, Space } from 'antd';
 import { actions } from '../index';
 import styles from './index.module.scss';

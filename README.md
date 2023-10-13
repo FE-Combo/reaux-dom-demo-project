@@ -4,11 +4,12 @@
 
 ## 项目结构
 
-- src/modules：模块（业务代码模块，模块之前没有强依赖）
-- src/components：共用组件
-- src/services：API 集，可使用 yapi-ts-engine 自动生成
+- src/modules：模块（业务代码模块，模块之前没有强依赖），使用 `rc module <module-name>` 创建
+- src/state：全局状态，使用 `rc state` 更新
+- src/components：共用组件，可使用 `rc comp <component-name>` 创建
+- src/services：API 集，使用 yapi-ts-engine 自动生成 API 集
 - src/utils：工具库
-- public: 静态资源
+- public: 静态资源，可使用 `rc download <source-url> <destination-path>` 下载
 - config: 项目脚本
 
 ## 项目启动
@@ -22,6 +23,7 @@
 ## 代码规范
 
 - 禁止非法 any
+- 禁止手动创建 module，使用 `rc module <module-name>` 创建
 - 代码 commit/push 禁止绕过检测，禁止使用--no-verify
 - 变量使用小驼峰名 e.g: let myName = "xiaowang"
 - 常量使用全大写字母与下划线 e.g: const MY_NAME ="xiaowang"
@@ -99,13 +101,31 @@ import { View } from 'modules/test';
 start({ Component: View, container: document.getElementById('framework-app-root') as HTMLDivElement });
 ```
 
+## CLI 工具
+
+使用项目 CLI 工具可以便捷地管理前端项目的模块（src/modules）、组件（src/components），并更新全局状态（src/state），以提高前端项目的开发效率。
+
+```bash
+## 安装
+npm i -g reaux-cli
+
+## 使用
+rc init <project-name> ## 创建项目
+rc module <module-name> ## 创建模块
+rc comp <component-name> ## 创建组件
+rc state ## 更新全局状态
+rc download <source-url> <destination-path> ## 下载资源
+```
+
 ## Q&A
 
-- 相较于 dva 有什么优势？
+- 相较于 dva 和 create react app 有什么优势？
 
-  1.  状态按需加载
+  状态按需加载：我们提供了状态按需加载的功能，这意味着你可以按需加载应用状态，从而提高性能和加载速度。
 
-  2.  更加安全以及完善的 ts 校验
+  强大的类型安全和完善的 TypeScript 校验：我们注重安全性，并提供了完整的 TypeScript 支持，确保代码更加稳健、易于维护。
+
+  更完善的数据流方案和项目结构：我们的项目具有一套完善的数据流方案，使数据管理更加轻松，并提供了清晰的项目结构，有助于开发者更容易理解和维护代码。
 
 - 每个 action 都需要 dispatch，写法是否可以简化?
 

@@ -2,7 +2,7 @@ import React, { FC, memo } from 'react';
 import enUS from 'antd/lib/locale/en_US';
 import zhCN from 'antd/lib/locale/zh_CN';
 import { useSelector, shallowEqual } from 'react-redux';
-import { AllState } from 'src/utils/state';
+import { AllState } from 'src/state';
 import { Async } from 'reaux';
 import { ConfigProvider, Space } from 'antd';
 import { Route, Switch, Link } from 'react-router-dom';

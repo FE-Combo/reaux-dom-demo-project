@@ -1,7 +1,7 @@
 import Main from './component/Main';
 import { register, Model, helper } from 'reaux-dom';
 import Detail from './component/Detail';
-import { AllState } from 'src/utils/state';
+import { AllState } from 'src/state';
 import { State } from './type';
 
 const initialState: State = {

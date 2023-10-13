@@ -1,12 +1,11 @@
 import Main from './component/Main';
 import { register, Model, connect } from 'reaux-dom';
 import { State } from './type';
-import { AllState } from 'src/utils/state';
+import { AllState } from 'src/state';
 import { ObserverInstanceCallback } from 'react-intersection-observer';
 
 const initialState: State = {
-  name: 'about',
-  big: 10n
+  name: 'about'
 };
 
 class ActionHandler extends Model<State, AllState> {
