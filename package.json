@@ -53,7 +53,7 @@
     "@types/blueimp-md5": "^2.18.0",
     "@types/js-cookie": "^3.0.1",
     "yapi-ts-engine": "^0.1.1",
-    "reaux-scripts": "^0.1.2"
+    "reaux-scripts": "^0.1.3"
   },
   "resolutions": {
     "@types/react": "^18.2.28",

@@ -6660,10 +6660,10 @@ reaux-dom@1.3.1:
     reaux "^2.3.1"
     tslib "~2.4.0"
 
-reaux-scripts@^0.1.2:
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/reaux-scripts/-/reaux-scripts-0.1.2.tgz#883196cfacc288127e10e40b7918d180fa9138cb"
-  integrity sha512-5D8ukc00IJ1R7X0CuQulwhST5O5vKa23nCk419Zt6P/Zipbkss1xwiKVK3XVnYQJEXq/omNdqNTrojLtUPNRrQ==
+reaux-scripts@^0.1.3:
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/reaux-scripts/-/reaux-scripts-0.1.3.tgz#94af9f45ee92086e495cce853e43143dcc904b79"
+  integrity sha512-YZ0sExG+RdPIJvuxCq3uqsXD+8dTQcpH2nNze/pUg0Lnu+BLNorn7CyaqO0DMwJK6S0jhJjPkhxEslLnxOkMcg==
   dependencies:
     "@babel/core" "^7.19.6"
     "@babel/plugin-proposal-decorators" "^7.21.0"
