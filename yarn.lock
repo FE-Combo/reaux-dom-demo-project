@@ -2761,13 +2761,18 @@ chalk@^2.4.2:
     escape-string-regexp "^1.0.5"
     supports-color "^5.3.0"
 
-chalk@^4.0.0, chalk@^4.1.0, chalk@^4.1.2:
+chalk@^4.0.0, chalk@^4.1.2:
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/chalk/-/chalk-4.1.2.tgz#aac4e2b7734a740867aeb16bf02aad556a1e7a01"
   integrity sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==
   dependencies:
     ansi-styles "^4.1.0"
     supports-color "^7.1.0"
+
+chalk@^5.3.0:
+  version "5.3.0"
+  resolved "https://registry.yarnpkg.com/chalk/-/chalk-5.3.0.tgz#67c20a7ebef70e7f3970a01f90fa210cb6860385"
+  integrity sha512-dLitG79d+GV1Nb/VYcCDFivJeK1hiukt9QjRNVOsUtTy1rR1YJsmpGGTZ3qJos+uw7WmWF4wUwBd9jxjocFC2w==
 
 "chokidar@>=3.0.0 <4.0.0", chokidar@^3.5.3:
   version "3.5.3"
@@ -4083,7 +4088,7 @@ glob-to-regexp@^0.4.1:
   resolved "https://registry.yarnpkg.com/glob-to-regexp/-/glob-to-regexp-0.4.1.tgz#c75297087c851b9a578bd217dd59a92f59fe546e"
   integrity sha512-lkX1HJXwyMcprw/5YUZc2s7DrpAiHB21/V+E1rHUrVNokkvB6bqMzT0VfV6/86ZNabt1k14YOIaT7nDvOX3Iiw==
 
-glob@^7.1.3:
+glob@^7.0.0, glob@^7.1.3:
   version "7.2.3"
   resolved "https://registry.yarnpkg.com/glob/-/glob-7.2.3.tgz#b8df0fb802bbfa8e89bd1d938b4e16578ed44f2b"
   integrity sha512-nFR0zLpU2YCaRxwoCJvL6UvCH2JFyFVIvwTLsIf21AuHlMskA1hhTdk+LlYJtOlYt9v6dvszD2BGRqBL+iQK9Q==
@@ -4495,6 +4500,11 @@ internal-slot@^1.0.5:
     get-intrinsic "^1.2.0"
     has "^1.0.3"
     side-channel "^1.0.4"
+
+interpret@^1.0.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/interpret/-/interpret-1.4.0.tgz#665ab8bc4da27a774a40584e812e3e0fa45b1a1e"
+  integrity sha512-agE4QfB2Lkp9uICn7BAqoscw4SZP9kTE2hxiFI3jBPmXJfdqiahTbUuKGsMoN2GtqL9AxhYioAcVvgsb1HvRbA==
 
 invariant@^2.2.1:
   version "2.2.4"
@@ -5357,6 +5367,15 @@ node-releases@^2.0.13:
   version "2.0.13"
   resolved "https://registry.yarnpkg.com/node-releases/-/node-releases-2.0.13.tgz#d5ed1627c23e3461e819b02e57b75e4899b1c81d"
   integrity sha512-uYr7J37ae/ORWdZeQ1xxMJe3NtdmqMC/JZK+geofDrkLUApKRHPd18/TxtBOJ4A0/+uUIliorNrfYV6s1b02eQ==
+
+node-wiz@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/node-wiz/-/node-wiz-0.0.2.tgz#11ad340e5be76475a98ef6547e0242e5cc2f7314"
+  integrity sha512-3faqEa8HMtnd9P9hw0ysYBRpVkLTlu/ogt3adiC/0L4haCn13u5mSl9sdzV7XuyvnAxJchYokQx1ZlWB4I/Qkg==
+  dependencies:
+    chalk "^5.3.0"
+    fs-extra "^11.1.1"
+    shelljs "^0.8.5"
 
 normalize-package-data@^2.5.0:
   version "2.5.0"
@@ -6660,10 +6679,10 @@ reaux-dom@1.3.1:
     reaux "^2.3.1"
     tslib "~2.4.0"
 
-reaux-scripts@^0.1.3:
-  version "0.1.3"
-  resolved "https://registry.yarnpkg.com/reaux-scripts/-/reaux-scripts-0.1.3.tgz#94af9f45ee92086e495cce853e43143dcc904b79"
-  integrity sha512-YZ0sExG+RdPIJvuxCq3uqsXD+8dTQcpH2nNze/pUg0Lnu+BLNorn7CyaqO0DMwJK6S0jhJjPkhxEslLnxOkMcg==
+reaux-scripts@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/reaux-scripts/-/reaux-scripts-0.2.1.tgz#108d72f0ec0d43fe3ac307495f4cc14a53bcfeac"
+  integrity sha512-3OE61wLF66oQLUdgxmehz+MLQCwpsAIQdMG6Yq+8riJzvp152OPsVobLEZJCNKvNxRH/RVF2p3ESNhSfvgHTpA==
   dependencies:
     "@babel/core" "^7.19.6"
     "@babel/plugin-proposal-decorators" "^7.21.0"
@@ -6677,7 +6696,6 @@ reaux-scripts@^0.1.3:
     "@typescript-eslint/parser" "^5.20.0"
     babel-loader "^9.0.0"
     babel-plugin-import "^1.13.3"
-    chalk "^4.1.0"
     cross-env "^7.0.3"
     css-loader "^6.7.1"
     eslint "^7.32.0"
@@ -6686,13 +6704,13 @@ reaux-scripts@^0.1.3:
     eslint-plugin-react-hooks "^1.0.1"
     file-loader "^6.2.0"
     fork-ts-checker-webpack-plugin "^7.2.13"
-    fs-extra "^11.1.1"
     html-webpack-plugin "^4.5.2"
     husky "4.3.8"
     less "^4.1.2"
     less-loader "^10.2.0"
     lint-staged "^12.3.4"
     mini-css-extract-plugin "^2.7.2"
+    node-wiz "^0.0.2"
     postcss-loader "^7.0.2"
     postcss-preset-env "^8.4.1"
     postcss-scss "^4.0.6"
@@ -6721,6 +6739,13 @@ reaux@^2.3.1:
     react-redux "~8.0.4"
     redux "~4.2.0"
     tslib "~2.4.0"
+
+rechoir@^0.6.2:
+  version "0.6.2"
+  resolved "https://registry.yarnpkg.com/rechoir/-/rechoir-0.6.2.tgz#85204b54dba82d5742e28c96756ef43af50e3384"
+  integrity sha512-HFM8rkZ+i3zrV+4LQjwQ0W+ez98pApMGM3HUrN04j3CqzPOzl9nmP15Y8YXNm8QHGv/eacOVEjqhmWpkRV0NAw==
+  dependencies:
+    resolve "^1.1.6"
 
 redent@^3.0.0:
   version "3.0.0"
@@ -6857,7 +6882,7 @@ resolve-pathname@^3.0.0:
   resolved "https://registry.yarnpkg.com/resolve-pathname/-/resolve-pathname-3.0.0.tgz#99d02224d3cf263689becbb393bc560313025dcd"
   integrity sha512-C7rARubxI8bXFNB/hqcp/4iUeIXJhJZvFPFPiSPRnhU5UPxzMFIl+2E6yY6c4k9giDJAhtV+enfA+G89N6Csng==
 
-resolve@^1.10.0, resolve@^1.14.2:
+resolve@^1.1.6, resolve@^1.10.0, resolve@^1.14.2:
   version "1.22.8"
   resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.22.8.tgz#b6c87a9f2aa06dfab52e3d70ac8cde321fa5a48d"
   integrity sha512-oKWePCxqpd6FlLvGV1VU0x7bkPmmCNolxzjMf4NczoDnQcIWrAF+cPtZn5i6n+RfD2d9i0tzpKnG6Yk168yIyw==
@@ -7135,6 +7160,15 @@ shell-quote@^1.8.1:
   version "1.8.1"
   resolved "https://registry.yarnpkg.com/shell-quote/-/shell-quote-1.8.1.tgz#6dbf4db75515ad5bac63b4f1894c3a154c766680"
   integrity sha512-6j1W9l1iAs/4xYBI1SYOVZyFcCis9b4KCLQ8fgAGG07QvzaRLVVRQvAy85yNmmZSjYjg4MWh4gNvlPujU/5LpA==
+
+shelljs@^0.8.5:
+  version "0.8.5"
+  resolved "https://registry.yarnpkg.com/shelljs/-/shelljs-0.8.5.tgz#de055408d8361bed66c669d2f000538ced8ee20c"
+  integrity sha512-TiwcRcrkhHvbrZbnRcFYMLl30Dfov3HKqzp5tO5b4pt6G/SezKcYhmDg15zXVBswHmctSAQKznqNW2LO5tTDow==
+  dependencies:
+    glob "^7.0.0"
+    interpret "^1.0.0"
+    rechoir "^0.6.2"
 
 side-channel@^1.0.4:
   version "1.0.4"
