@@ -5368,10 +5368,10 @@ node-releases@^2.0.13:
   resolved "https://registry.yarnpkg.com/node-releases/-/node-releases-2.0.13.tgz#d5ed1627c23e3461e819b02e57b75e4899b1c81d"
   integrity sha512-uYr7J37ae/ORWdZeQ1xxMJe3NtdmqMC/JZK+geofDrkLUApKRHPd18/TxtBOJ4A0/+uUIliorNrfYV6s1b02eQ==
 
-node-wiz@^0.0.2:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/node-wiz/-/node-wiz-0.0.2.tgz#11ad340e5be76475a98ef6547e0242e5cc2f7314"
-  integrity sha512-3faqEa8HMtnd9P9hw0ysYBRpVkLTlu/ogt3adiC/0L4haCn13u5mSl9sdzV7XuyvnAxJchYokQx1ZlWB4I/Qkg==
+node-wiz@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/node-wiz/-/node-wiz-0.0.3.tgz#abe3115950cc1e23634931a6ee0a7c69e6937755"
+  integrity sha512-LGXWTc2P8yjYPkiKjmsqZ0v7gpquuYW4M1Ao0hMn8N4y930KCtd/bNsXwfnC1HlNETag6xeSy1vIAsXgRQLzoA==
   dependencies:
     chalk "^5.3.0"
     fs-extra "^11.1.1"
@@ -6679,10 +6679,10 @@ reaux-dom@1.3.1:
     reaux "^2.3.1"
     tslib "~2.4.0"
 
-reaux-scripts@^0.2.1:
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/reaux-scripts/-/reaux-scripts-0.2.1.tgz#108d72f0ec0d43fe3ac307495f4cc14a53bcfeac"
-  integrity sha512-3OE61wLF66oQLUdgxmehz+MLQCwpsAIQdMG6Yq+8riJzvp152OPsVobLEZJCNKvNxRH/RVF2p3ESNhSfvgHTpA==
+reaux-scripts@^0.2.2:
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/reaux-scripts/-/reaux-scripts-0.2.2.tgz#342c23d6fe961d37fa207663f1afc7513fb6ad4b"
+  integrity sha512-r6sU++LMFvqZBkZ3oJ49L3/KSlQT+HsLjC3KvgyCyTlHTXOLvjf1FbbxTO2zAIXS3uhTfgo2APy+alW+RS1U7A==
   dependencies:
     "@babel/core" "^7.19.6"
     "@babel/plugin-proposal-decorators" "^7.21.0"
@@ -6710,7 +6710,7 @@ reaux-scripts@^0.2.1:
     less-loader "^10.2.0"
     lint-staged "^12.3.4"
     mini-css-extract-plugin "^2.7.2"
-    node-wiz "^0.0.2"
+    node-wiz "^0.0.3"
     postcss-loader "^7.0.2"
     postcss-preset-env "^8.4.1"
     postcss-scss "^4.0.6"

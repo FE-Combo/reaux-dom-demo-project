@@ -18,5 +18,5 @@
     "i18n": true,
     "JSX": true
   },
-  "ignorePatterns": ["node_modules/*", "public/*", "dep/*", "global.d.ts", "config/*", "dist/*"]
+  "ignorePatterns": ["node_modules/*", "public/*", "dep/*", "global.d.ts", "config/*", "dist/*", "scripts/*"]
 }
