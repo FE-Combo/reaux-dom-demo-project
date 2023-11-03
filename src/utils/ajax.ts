@@ -49,8 +49,9 @@ export default async function ajax<P, Q, B, H extends AxiosHeaders | null, F, R>
     const response = (
       await axios({
         method,
+        // eslint-disable-next-line
         // @ts-ignore
-        url: `${API_PREFIX || ''}${pathReplace(url, path)}`, // eslint-disable-line
+        url: `${API_PREFIX || ''}${pathReplace(url, path)}`,
         params: query,
         data: body || createFormData(formData),
         headers: headers || undefined

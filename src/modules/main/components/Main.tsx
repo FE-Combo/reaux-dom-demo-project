@@ -4,7 +4,7 @@ import zhCN from 'antd/lib/locale/zh_CN';
 import { useSelector, shallowEqual } from 'react-redux';
 import { AllState } from 'src/state';
 import { Async } from 'reaux';
-import { ConfigProvider, Space } from 'antd';
+import { ConfigProvider, Space, App } from 'antd';
 import { Route, Switch, Link } from 'react-router-dom';
 import NotFound from 'src/components/404';
 import styles from './index.module.scss';
@@ -18,24 +18,26 @@ const Index: FC = () => {
 
   return (
     <ConfigProvider locale={lang === 'zh' ? zhCN : enUS}>
-      <div className={styles.container}>
-        <img src="/react-icon.png" />
-        <h1>Reaux integrates the React and Redux frameworks, strict in TypeScript.</h1>
-        <br />
-        <Space>
-          <Link to="/home">Home</Link>
-          <Link to="/about">About</Link>
-        </Space>
-        <br />
-        <br />
-        <Switch>
-          <Route exact path="/" render={() => <></>} />
-          <Route exact path="/home" render={() => <HomeView />} />
-          <Route exact path="/home/detail" render={() => <HomeDetailView />} />
-          <Route exact path="/about" render={() => <AboutView />} />
-          <Route exact path="*" render={() => <NotFound />} />
-        </Switch>
-      </div>
+      <App>
+        <div className={styles.container}>
+          <img src="/react-icon.png" />
+          <h1>Reaux integrates the React and Redux frameworks, strict in TypeScript.</h1>
+          <br />
+          <Space>
+            <Link to="/home">Home</Link>
+            <Link to="/about">About</Link>
+          </Space>
+          <br />
+          <br />
+          <Switch>
+            <Route exact path="/" render={() => <></>} />
+            <Route exact path="/home" render={() => <HomeView />} />
+            <Route exact path="/home/detail" render={() => <HomeDetailView />} />
+            <Route exact path="/about" render={() => <AboutView />} />
+            <Route exact path="*" render={() => <NotFound />} />
+          </Switch>
+        </div>
+      </App>
     </ConfigProvider>
   );
 };
