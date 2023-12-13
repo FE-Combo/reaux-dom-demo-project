@@ -4,15 +4,15 @@
   "frame": "reaux-dom",
   "scripts": {
     "reinstall": "rm -rf node_modules && rm -rf yarn.lock && yarn install",
-    "dev": "rs dev",
-    "build": "rs build",
+    "dev": "reaux-scripts dev",
+    "build": "reaux-scripts build",
     "build:analyze": "ANALYZE=true yarn build",
     "type-check": "tsc --pretty --noEmit",
     "eslint": "eslint . --fix",
     "stylelint": "stylelint '**/*.scss'",
     "prettier": "prettier --write ./src",
     "api": "node config/api.js",
-    "eject": "rs eject"
+    "eject": "reaux-scripts eject"
   },
   "husky": {
     "hooks": {
@@ -45,7 +45,7 @@
     "lodash": "^4.17.15",
     "moment": "^2.24.0",
     "normalize.css": "^8.0.1",
-    "reaux-dom": "1.4.0",
+    "reaux-dom": "1.5.0",
     "tslib": "^2.3.1",
     "@types/react": "~18.2.37",
     "@types/react-dom": "~18.2.15",
@@ -57,7 +57,7 @@
     "@types/blueimp-md5": "^2.18.0",
     "@types/js-cookie": "^3.0.1",
     "yapi-ts-engine": "^0.3.3",
-    "reaux-scripts": "^0.2.5"
+    "reaux-scripts": "^0.3.1"
   },
   "devServerOptions": {
     "proxy": [
