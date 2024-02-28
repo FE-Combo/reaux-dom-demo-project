@@ -14,7 +14,7 @@ class ActionHandler extends Model<State, AllState> {
   }
 
   onLoad(): void {
-    console.log('home onLoad');
+    console.info('home onLoad');
   }
 
   onUnload() {
@@ -23,7 +23,7 @@ class ActionHandler extends Model<State, AllState> {
 
   @helper.interval(3)
   onTick() {
-    console.log('home onTick');
+    console.info('home onTick');
   }
 
   goDetail() {

@@ -13,14 +13,14 @@ const initialState: State = {
 
 class ActionHandler extends Model<State, AllState> {
   async onReady() {
-    console.log('main onReady');
+    console.info('main onReady');
     const lang =
       cookieUitls.get('lang') || (this.analyzeAcceptLanguage(navigator.languages.join(',') || 'zh') as Language);
     this.setState({ lang });
   }
 
   async onLoad() {
-    console.log('main onLoad');
+    console.info('main onLoad');
   }
 
   private analyzeAcceptLanguage(acceptLanguageString: string): string {

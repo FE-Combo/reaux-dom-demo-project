@@ -14,19 +14,19 @@ class ActionHandler extends Model<State, AllState> {
   }
 
   onShow(entry: Parameters<ObserverInstanceCallback>[1]) {
-    console.log('about onShow', entry);
+    console.info('about onShow', entry);
   }
 
   onHide(entry: Parameters<ObserverInstanceCallback>[1]) {
-    console.log('about onHide', entry);
+    console.info('about onHide', entry);
   }
 
   onUpdate(...args): void {
-    console.log('about onUpdate', args);
+    console.info('about onUpdate', args);
   }
 
   onUnload(): void {
-    console.log('about onUnload');
+    console.info('about onUnload');
   }
 
   async goHome() {
