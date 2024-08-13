@@ -6690,10 +6690,10 @@ reaux-dom@1.5.0:
     react-router-dom "~5.3.4"
     reaux "^2.5.0"
 
-reaux-scripts@^0.3.1:
-  version "0.3.1"
-  resolved "https://registry.npmmirror.com/reaux-scripts/-/reaux-scripts-0.3.1.tgz#e00f42e4e2140038d9b882e8f06fd37b93c48ee0"
-  integrity sha512-XyZPISBy+c2tnnOdSQAVs0naG/1jlyc8dVJWCpfHHgF9auXI/bSVgYtprxNiGJ48yMY82QzE8x6Y6TVquKuF1w==
+reaux-scripts@^0.3.3:
+  version "0.3.3"
+  resolved "https://registry.yarnpkg.com/reaux-scripts/-/reaux-scripts-0.3.3.tgz#4ad31a732975968050c201c0aa0d147f8d86b5e4"
+  integrity sha512-BIOXOX85KnkRhCObtIQEmWQ6iO9p2Np8Ob3yG9Hm2rHY+TfiMHfG8MSEXjro74plp7874LWoba2WHU5eWy5+cQ==
   dependencies:
     "@babel/core" "^7.19.6"
     "@babel/plugin-proposal-decorators" "^7.21.0"
@@ -6731,6 +6731,7 @@ reaux-scripts@^0.3.1:
     react-refresh "^0.14.0"
     sass "^1.49.8"
     sass-loader "^13.1.0"
+    style-loader "^4.0.0"
     stylelint "^14.7.1"
     stylelint-config-prettier "^9.0.3"
     stylelint-config-standard "^25.0.0"
@@ -7480,6 +7481,11 @@ strip-json-comments@^3.1.0, strip-json-comments@^3.1.1:
   version "3.1.1"
   resolved "https://registry.npmmirror.com/strip-json-comments/-/strip-json-comments-3.1.1.tgz#31f1281b3832630434831c310c01cccda8cbe006"
   integrity sha512-6fPc+R4ihwqP6N/aIv2f1gMH8lOVtWQHoqC4yK6oSDVVocumAsfCqjkXnqiYMhmMwS/mEHLp7Vehlt3ql6lEig==
+
+style-loader@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/style-loader/-/style-loader-4.0.0.tgz#0ea96e468f43c69600011e0589cb05c44f3b17a5"
+  integrity sha512-1V4WqhhZZgjVAVJyt7TdDPZoPBPNHbekX4fWnCJL1yQukhCeZhJySUL+gL9y6sNdN95uEOS83Y55SqHcP7MzLA==
 
 style-search@^0.1.0:
   version "0.1.0"
